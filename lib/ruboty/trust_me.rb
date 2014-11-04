@@ -12,7 +12,7 @@ module Ruboty
     end
 
     def trust?(from_name)
-      trusted_names.include?(from_name) || trusted_names.empty?
+      trusted_names.include?(from_name) || trusted_names.empty? || from_name == name
     end
 
     def trusted_names
